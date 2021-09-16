@@ -6,17 +6,17 @@ Application Setup (DO THIS FIRST)
 2. Clone the repository from your repository.
 3. Run the project, ensure project run without any problem.
 
-###Time Limit:
+### Time Limit:
 - 5 minutes - setup 
 - 30 minutes - coding test
 
-###Instruction:
+### Instruction:
 1. create a CRUD API based on the following Criteria(s)
 2. Create a branch "test-[Selected-criteria]" 
 3. branch out to proceed with another criteria and follow step 2. 
 4. Upon completion merge every branch into Main branch.
 
-###Scenario:
+### Scenario:
 - Company managing teen idol, requires you to create system capable to handle idols information.
 - the information are as following:
   - idol personal information
@@ -25,7 +25,7 @@ Application Setup (DO THIS FIRST)
   - status
 
 
-###Criteria:
+### Criteria:
 
 Metadata 
 - Database Integration
