@@ -12,9 +12,9 @@ Application Setup (DO THIS FIRST)
 
 ### Instruction:
 1. create a CRUD API based on the following Criteria(s)
-2. Create a branch "test-[Selected-criteria]" 
+2. Create a branch "test-[Selected-criteria]" from Master branch.
 3. branch out to proceed with another criteria and follow step 2. 
-4. Upon completion merge every branch into Main branch.
+4. Upon completion merge every branch into Master branch.
 
 ### Scenario:
 - Company managing teen idol, requires you to create system capable to handle idols information.
