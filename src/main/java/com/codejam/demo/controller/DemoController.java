@@ -3,6 +3,7 @@ package com.codejam.demo.controller;
 
 
 import com.codejam.demo.exception.CustomException;
+import com.codejam.demo.model.PersonalInformation;
 import com.codejam.demo.model.User;
 import com.codejam.demo.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -32,6 +33,16 @@ public class DemoController {
     public User getUser(String id) {
         try {
             return userService.getUser(id);
+        } catch (Exception ex) {
+            throw new CustomException("Internal Server error !",
+                    HttpStatus.INTERNAL_SERVER_ERROR, true);
+        }
+    }
+
+    @RequestMapping(value = "/idol-info", method = RequestMethod.GET)
+    public PersonalInformation getIdolPersonalInfo() {
+        try {
+            return userService.gerIdolPersonalInfo();
         } catch (Exception ex) {
             throw new CustomException("Internal Server error !",
                     HttpStatus.INTERNAL_SERVER_ERROR, true);
