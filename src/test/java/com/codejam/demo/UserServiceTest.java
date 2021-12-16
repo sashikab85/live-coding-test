@@ -21,6 +21,6 @@ public class UserServiceTest {
     @Test
     public void test_IdolPersonalInfo_nominal() {
         PersonalInformation personalInformation = userService.gerIdolPersonalInfo ();
-        Assert.assertFalse("idol status should not be active!", personalInformation.getIdolStatus().equalsIgnoreCase("in-active"));
+        Assert.assertFalse("idol status should not be in - active!", personalInformation.getIdolStatus().equalsIgnoreCase("in-active"));
     }
 }
