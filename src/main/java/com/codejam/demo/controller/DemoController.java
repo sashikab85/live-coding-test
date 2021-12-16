@@ -3,18 +3,18 @@ package com.codejam.demo.controller;
 
 
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.*;
 
 
-//@RestController
-//@RequiredArgsConstructor
-//@RequestMapping(path = "demo")
+@RestController
+@RequestMapping("/demo")
+@CrossOrigin
 public class DemoController {
 
 
-    @GetMapping(path = "/unit-test")
-    ResponseEntity<Integer> getUnitTestResult() throws Exception{
-        return null;
+    @RequestMapping(method = RequestMethod.GET)
+    ResponseEntity<String> getUnitTestResult() throws Exception{
+        return ResponseEntity.ok(new String(" <<<<<<<<< Test Spring Filters <<<<<<<"));
     }
 
 }
