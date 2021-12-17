@@ -31,6 +31,9 @@ public class PersonalInformation {
         this.idolStatus = idolStatus;
     }
 
+    public PersonalInformation() {
+    }
+
     public int getId() {
         return id;
     }

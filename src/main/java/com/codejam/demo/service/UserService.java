@@ -18,14 +18,18 @@ public class UserService {
     @Autowired
     PersonalInformationRepository  personalInformationRepository;
 
+    public UserService(RestClient restClient, PersonalInformationRepository personalInformationRepository) {
+        this.restClient = restClient;
+        this.personalInformationRepository = personalInformationRepository;
+    }
+
     public User getUser(String id) {
         return restClient.getUser(id);
     }
 
     public PersonalInformation gerIdolPersonalInfo () {
         Integer randomNumber = this.generateRandomInteger(1,1);
-        com.codejam.demo.entity.PersonalInformation personalInfo = personalInformationRepository
-                .findById(randomNumber);
+        com.codejam.demo.entity.PersonalInformation personalInfo = personalInformationRepository.findById(randomNumber);
         return new PersonalInformation(personalInfo.getId(),
                 personalInfo.getRealName(),
                 personalInfo.getIdolName(),
